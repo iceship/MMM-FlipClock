@@ -41,6 +41,12 @@ Module.register("MMM-FlipClock", {
 
         var dateWrapper = document.createElement("div");
         var timeWrapper = document.createElement("div");
+
+        var timeLayout = document.createAttribute("data-layout");
+        timeLayout.value = "vertical fill";
+        timeWrapper.attributes.setNamedItem(timeLayout);
+
+
         var weekWrapper = document.createElement("div");
 
         // Style Wrappers
@@ -102,6 +108,7 @@ Module.register("MMM-FlipClock", {
         timeWrapper.appendChild(dataHoursWrapper);
 
         //Seperator
+        /*
         var dataSeperator1Wrapper = document.createElement("span");
         dataSeperator1Wrapper.className = "tick-text-inline";
 
@@ -114,9 +121,11 @@ Module.register("MMM-FlipClock", {
         dataSeperator1Wrapper.attributes.setNamedItem(dataViewSeperator1);
 
         timeWrapper.appendChild(dataSeperator1Wrapper);
+        */
 
         //Minutes
         var dataMinutesWrapper = document.createElement("span");
+        //var dataMinutesWrapper = document.createElement("div");
 
         var dataKeyMinutes = document.createAttribute("data-key");
         dataKeyMinutes.value = "minutes";

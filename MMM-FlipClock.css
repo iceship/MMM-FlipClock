@@ -1,15 +1,18 @@
 .tick {
-    font-size: 1rem;
+    font-size: 2.9rem;
     white-space: nowrap;
+    line-height: 0.8;
+    padding-bottom: 1em;
 }
 
 .tick-flip,
 .tick-text-inline {
-    font-size: 5em;
+    font-size: 10em;
+    font-weight: 900;
 }
 
 .tick-label {
-    margin-top: 1em;
+    margin-top: 0.5em;
     font-size: 1em;
 }
 
@@ -21,6 +24,7 @@
     display: inline-block;
     text-align: center;
     min-width: 0.3em;
+    min-height: 0em;
 }
 
 .tick-text-inline+.tick-text-inline {
@@ -37,11 +41,11 @@ body {
 }
 
 .tick-text-inline {
-    color: #595d63;
+    color: #fff;
 }
 
 .tick-label {
-    color: #595d63;
+    color: #fff;
 }
 
 .tick-flip-panel {
@@ -49,17 +53,19 @@ body {
 }
 
 .tick-flip {
+    margin-left: 0em;
+    margin-right: 0em;
     min-width: 0em;
-    letter-spacing: .1em;
-    text-indent: .1em;
+    letter-spacing: 0em;
+    text-indent: 0em;
 }
 
 .tick-flip-panel-text-wrapper {
-    line-height: 1.45;
+    line-height: 0.85;
 }
 
 .tick-flip-panel {
-    background-color: #3c3e3c;
+    background-color: #ff0000;
 }
 
 .tick-flip {
